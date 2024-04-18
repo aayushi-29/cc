@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    width:100%;
+    background-color: #eae7dc;
+}
+.container .rows{
+    width:100%;
+    margin:auto;
+}
+.container .rows .headers{
+    width:80%;
+    text-align: center;
+    margin:auto;
+}
+.container .rows .headers h1{
+    padding-top: 30px;
+    font-size: 70px;
+    color:rgb(215, 72, 72);
+}
+.container .rows .headers p{
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    color:rgb(122, 118, 118);
+}
+.container .rows .headers h5{
+    margin-top: 20px;
+    
+    font-size: 25px;
+    text-align: center;
+}
+.container .rows .headers h4{
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 1.5;
+    color:rgb(255, 254, 254);
+}
+
+.container .rows .headers img{
+    width: 60%;
+    height:auto;
+    align-items: center;
+} 
+.container .rows .headers .audio img{
+    width: 200px;
+    height:100px;
+    margin-top: 20px;
+    align-items: center;
+} 
+.container .rows .headers .audio h1{
+    align-items: center;
+    font-size: 20px;
+    color: black;
+}
+.container .rows .headers .audio video{
+    margin-top: 30px;
+}  
+
+    

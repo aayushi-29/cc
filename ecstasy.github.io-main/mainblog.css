@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+/* blog page */
+.blog{
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding-top: 100px;
+    margin-top: -50px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+p{
+    /* color: rgb(131, 127, 127); */
+    font-size: 20px; 
+    font-weight: 300;
+    padding: 10px;
+    margin-top: 5px;
+}
+/* .row{
+    margin
+    display: flex;
+    justify-content: space-between;
+} */
+.blog-col{
+    flex-basis: 31%;
+    background: #eae7dc;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px;
+    color: rgb(215, 72, 72);
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin:30px;
+    color: #5c5b5b;
+    font-size: 40px;
+}
+.blog-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.blog-col img{
+    height: 100px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+.blog .blog-col i{
+    color: rgb(215, 72, 72);
+}
+.blog .blog-col h4{
+    color: #212020;
+}
+
+.blog-col .blog1{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid rgb(215, 72, 72);
+    background: #fffcff;
+    color: rgb(215, 72, 72);
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.blog-col .blog1:hover{
+    background: rgb(215, 72, 72);
+    color: #ffeeff;
+}
+
+

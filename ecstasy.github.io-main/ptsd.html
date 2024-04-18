@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTSD</title>
+    <link rel="stylesheet" href="info.css">
+     <link rel="shortcut icon" href="image/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+            <div class="rows">
+                <div class="headers">
+               <h1>PTSD</h1>
+               <img src="image/col-4.png">
+               <p>Post-traumatic stress disorder (PTSD) is a mental health disorder that some people develop after they experience or see a traumatic event. The traumatic event may be life-threatening, such as combat, a natural disaster, a car accident, or sexual assault. But sometimes the event is not necessarily a dangerous one. For example, the sudden, unexpected death of a loved one can also cause PTSD.It's normal to feel afraid during and after a traumatic situation. The fear triggers a "fight-or-flight" response. This is your body's way of helping to protect itself from possible harm. It causes changes in your body such as the release of certain hormones and increases in alertness, blood pressure, heart rate, and breathing.
+                </p>
+               <h5>SYMPTOMS</h5>
+               <h4>
+                <p>Recurrent, unwanted distressing memories of the traumatic event<br>Self-destructive behaviour<br>Trying to avoid thinking or talking about the traumatic event<br>Feeling detached from family and friends<br>Feeling emotionally numb
+                </p>
+               </h4>
+               <h5>TIPS</h5>
+               <h4>
+                <p>Focus on your breathing<br>Carry an object that reminds you of the present<br>Tell yourself that you are safe<br>Enjoy the peace of nature<br>Confide in a person you trust
+                </p>
+               </h4>
+               <h5>MUSIC THAT MIGHT HELP</h5>
+               <div class="audio">
+                <img src="music/play.png" id="icon3">
+                <h1>Click here to play</h1>
+               <h5>VIDEOS THAT MIGHT HELP</h5>
+               <video width="80%" height="auto" controls autoplay muted>
+                <source src="videos/movie3.mp4" type="video/mp4">
+                <source src="videos/movie3.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+              <h1>Video courtesy of <a href="https://www.youtube.com/channel/UCkJEpR7JmS36tajD34Gp4VA" target="_blank">Psych2Go</a>.</p>
+              </h1> 
+            </div>
+            </div>
+    <audio id="mysong3">
+        <source src="music/mysong3.mp3" type="audio/mp3">
+
+    </audio>
+    <script>
+        var mysong3 = document.getElementById("mysong3");
+        var icon3 = document.getElementById("icon3");
+        icon3.onclick = function(){
+            if(mysong3.paused){
+                mysong3.play();
+                icon3.src="music/pause.png";
+            }
+            else{
+                mysong3.pause();
+                icon3.src="music/play.png";
+            }
+        }
+    </script>
+</body>
+</html>

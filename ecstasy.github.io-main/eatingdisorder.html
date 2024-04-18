@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eating Disorder</title>
+    <link rel="stylesheet" href="info.css">
+     <link rel="shortcut icon" href="image/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+            <div class="rows">
+                <div class="headers">
+               <h1>Eating Disorder</h1>
+               <img src="image/col-3.png">
+               <p>Eating disorders are serious mental health disorders. They involve severe problems with your thoughts about food and your eating behaviors. You may eat much less or much more than you need.Eating disorders are medical conditions; they are not a lifestyle choice. They affect your body's ability to get proper nutrition. This can lead to health issues, such as heart and kidney problems, or sometimes even death. But there are treatments that can help.</p>
+               <h5>SYMPTOMS</h5>
+               <h4>
+               <p>Dramatic weight loss<br>Refusal to eat certain foods, such as carbs or fats<br>Exercising excessively<br>Avoiding mealtimes or eating in front of others<br>Complaining about constipation or stomach pain
+               </p>
+               </h4>
+               <h5>TIPS</h5>
+               <h4>
+                <p>Practice mindfulness<br>Stay hydrated<br>Eat more fibre<br>Eat breakfast every day<br>Keep a food journal
+                </p>
+               </h4>
+               <h5>MUSIC THAT MIGHT HELP</h5>
+               <div class="audio">
+                <img src="music/play.png" id="icon2">
+                <h1>Click here to play</h1>
+               <h5>VIDEOS THAT MIGHT HELP</h5>
+               <video width="80%" height="auto" controls autoplay muted>
+                <source src="videos/movie2.mp4" type="video/mp4">
+                <source src="videos/movie2.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+              <h1>Video courtesy of <a href="https://www.youtube.com/@PsychHub" target="_blank">PsychHub</a>.</p>
+              </h1> 
+            </div>
+            </div>
+    <audio id="mysong2">
+        <source src="music/mysong2.mp3" type="audio/mp3">
+
+    </audio>
+    <script>
+        var mysong2 = document.getElementById("mysong2");
+        var icon2 = document.getElementById("icon2");
+        icon2.onclick = function(){
+            if(mysong2.paused){
+                mysong2.play();
+                icon2.src="music/pause.png";
+            }
+            else{
+                mysong2.pause();
+                icon2.src="music/play.png";
+            }
+        }
+    </script>
+</body>
+</html>

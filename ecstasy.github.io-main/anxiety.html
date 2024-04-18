@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety</title>
+    <link rel="stylesheet" href="info.css">
+     <link rel="shortcut icon" href="image/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="rows">
+            <div class="headers">
+               <h1>Anxiety</h1>
+               <img src="image/col-1.png">
+               <p>Anxiety is a feeling of fear, dread, and uneasiness. It might cause you to sweat, feel restless and tense, and have a rapid heartbeat. It can be a normal reaction to stress. For example, you might feel anxious when faced with a difficult problem at work, before taking a test, or before making an important decision. It can help you to cope. The anxiety may give you a boost of energy or help you focus. But for people with anxiety disorders, the fear is not temporary and can be overwhelming.</p>
+               <h5>SYMPTOMS</h5>
+               <h4>
+               <p>Feeling nervous, restless or tense<br>Having a sense of impending danger, panic or doom<br>Having an increased heart rate<br>Breathing rapidly (hyperventilation)<br>Sweating or Trembling<br>Feeling weak or tired
+               </p>
+               </h4>
+               <h5>TIPS</h5>
+               <h4>
+                <p>Use Weighted Blankets<br>Try Deep Breathing Exercises<br>Exercise<br>Take a cold shower<br>Try Journaling
+                </p>
+               </h4>
+               <h5>MUSIC THAT MIGHT HELP</h5>
+               <div class="audio">
+                <img src="music/play.png" id="icon">
+                <h1>Click here to play</h1>
+               <h5>VIDEOS THAT MIGHT HELP</h5>
+               <video width="80%" height="auto" controls autoplay muted>
+                <source src="videos/movie.mp4" type="video/mp4">
+                <source src="videos/movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+              <h1>Video courtesy of <a href="https://www.youtube.com/channel/UCkJEpR7JmS36tajD34Gp4VA" target="_blank">Psych2Go</a>.</p>
+              </h1> 
+               </div> 
+            </div>       
+    <audio id="mysong">
+        <source src="music/mysong.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.src="music/pause.png";
+            }
+            else{
+                mysong.pause();
+                icon.src="music/play.png";
+            }
+        }
+    </script>
+</body>
+</html>

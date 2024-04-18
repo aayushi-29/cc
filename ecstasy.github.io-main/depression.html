@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression</title>
+    <link rel="stylesheet" href="info.css">
+     <link rel="shortcut icon" href="image/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="rows">
+            <div class="headers">
+               <h1>Depression</h1>
+               <img src="image/col-2.png">
+               <p>Depression is a disorder of the brain. There are a variety of causes, including genetic, biological, environmental, and psychological factors. Depression can happen at any age, but it often begins in teens and young adults. It is much more common in women. Women can also get postpartum depression after the birth of a baby. Some people get seasonal affective disorder in the winter. Depression is one part of bipolar disorder.</p>
+               <h5>SYMPTOMS</h5>
+               <h4>
+               <p>Feelings of guilt, worthlessness, and helplessness
+                <br>Insomnia, early-morning wakefulness, or sleeping too much
+                <br>Overeating or appetite loss<br>Crankiness or irritability
+                <br>Suicidal thoughts or suicide attempt
+               </p>
+               </h4>
+               <h5>TIPS</h5>
+               <h4>
+                <p>Practice gratitude<br>Try something new entirely<br>Incorporating meditation may help ground your thoughts<br>Spend time in nature<br>Getting enough sleep can also have a noticeable effect
+                </p>
+               </h4>
+               <h5>MUSIC THAT MIGHT HELP</h5>
+               <div class="audio">
+                <img src="music/play.png" id="icon1">
+                <h1>Click here to play</h1>
+               <h5>VIDEOS THAT MIGHT HELP</h5>
+               <video width="80%" height="auto" controls autoplay muted>
+                <source src="videos/movie1.mp4" type="video/mp4">
+                <source src="videos/movie1.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+              <h1>Video courtesy of <a href="https://www.youtube.com/channel/UCkJEpR7JmS36tajD34Gp4VA" target="_blank">Psych2Go</a>.</p>
+              </h1> 
+               </div> 
+            </div>
+    <audio id="mysong1">
+        <source src="music/mysong1.mp3" type="audio/mp3">
+
+    </audio>
+    <script>
+        var mysong1 = document.getElementById("mysong1");
+        var icon1 = document.getElementById("icon1");
+        icon1.onclick = function(){
+            if(mysong1.paused){
+                mysong1.play();
+                icon1.src="music/pause.png";
+            }
+            else{
+                mysong1.pause();
+                icon1.src="music/play.png";
+            }
+        }
+    </script>
+</body>
+</html>
